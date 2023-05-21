@@ -1,0 +1,36 @@
+# SimpleDAO
+
+SimpleDAO is a basic Decentralized Autonomous Organization (DAO) implemented on the Ethereum blockchain. It allows users to create accounts, deposit funds, and withdraw funds within the DAO.
+
+## Smart Contracts
+
+The repository contains the following smart contracts:
+
+- **SimpleDAO.sol**: The main contract implementing the DAO functionality.
+- **Account.sol**: A contract representing individual user accounts within the DAO.
+- **AccountRegistry.sol**: A registry contract that manages the creation and deployment of accounts.
+- **CrossChainExecutorList.sol**: A contract to manage trusted cross-chain executors.
+- **MinimalReceiver.sol**: A contract that allows receiving Ether and interacting with ERC721 and ERC1155 tokens.
+
+## Dependencies
+
+The following external dependencies are required to compile and run the smart contracts:
+
+- OpenZeppelin Contracts: A library for secure smart contract development. Version x.x.x.
+
+## Getting Started
+
+To get started with SimpleDAO, follow these steps:
+
+1. Install the required dependencies mentioned above.
+2. Compile the smart contracts using the Solidity compiler.
+3. Deploy the smart contracts to an Ethereum development network or mainnet.
+4. Interact with the deployed contracts using a web interface or Ethereum client libraries.
+
+## Contributing
+
+Contributions to SimpleDAO are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. Make sure to follow the repository's code style and guidelines.
+
+## License
+
+SimpleDAO is released under the [MIT License](LICENSE).
