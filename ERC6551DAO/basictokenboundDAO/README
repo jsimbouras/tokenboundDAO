@@ -1,16 +1,16 @@
-# SimpleDAO
+SimpleDAO
 
-SimpleDAO is a basic Decentralized Autonomous Organization (DAO) implemented on the Ethereum blockchain. It allows users to create accounts, deposit funds, and withdraw funds within the DAO.
+SimpleDAO is a basic Decentralized Autonomous Organization (DAO) implemented on the Ethereum blockchain. It allows users to create accounts, deposit funds, withdraw funds, and vote on proposals within the DAO.
 
 ## Smart Contracts
 
 The repository contains the following smart contracts:
 
-- **SimpleDAO.sol**: The main contract implementing the DAO functionality.
-- **Account.sol**: A contract representing individual user accounts within the DAO.
-- **AccountRegistry.sol**: A registry contract that manages the creation and deployment of accounts.
-- **CrossChainExecutorList.sol**: A contract to manage trusted cross-chain executors.
-- **MinimalReceiver.sol**: A contract that allows receiving Ether and interacting with ERC721 and ERC1155 tokens.
+- **SimpleDAO.sol**: The main contract implementing the DAO functionality. It provides functions to create an account, deposit funds, withdraw funds, and vote on proposals.
+- **Account.sol**: A contract representing individual user accounts within the DAO. It allows users to manage their account balances and interact with the DAO.
+- **AccountRegistry.sol**: A registry contract that manages the creation and deployment of accounts. It ensures that each ERC721 token is associated with a unique account.
+- **CrossChainExecutorList.sol**: A contract to manage trusted cross-chain executors. It allows the DAO to enable or disable trusted executors on different chains.
+- **MinimalReceiver.sol**: A contract that allows receiving Ether and interacting with ERC721 and ERC1155 tokens. It is used as a base contract for receiving funds and tokens in the DAO.
 
 ## Dependencies
 
@@ -27,6 +27,16 @@ To get started with SimpleDAO, follow these steps:
 3. Deploy the smart contracts to an Ethereum development network or mainnet.
 4. Interact with the deployed contracts using a web interface or Ethereum client libraries.
 
+## Functionality
+
+The SimpleDAO provides the following functions:
+
+- **createAccount**: Allows users to create an account within the DAO by providing an ERC721 token and token ID. Each account is associated with a unique ERC721 token.
+- **deposit**: Users can deposit funds into their account within the DAO.
+- **withdraw**: Users can withdraw funds from their account within the DAO.
+- **vote**: Users can vote on proposals within the DAO using their account.
+- **setCrossChainExecutor**: Only accessible to the owner of the DAO, this function enables or disables a trusted cross-chain executor.
+
 ## Contributing
 
 Contributions to SimpleDAO are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. Make sure to follow the repository's code style and guidelines.
@@ -34,4 +44,3 @@ Contributions to SimpleDAO are welcome! If you have any ideas, improvements, or 
 ## License
 
 SimpleDAO is released under the [MIT License](LICENSE).
-
