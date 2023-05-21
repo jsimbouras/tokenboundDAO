@@ -1,3 +1,14 @@
+Please note that this implementation assumes that you have already deployed the IERC6551Registry and IERC6551Account contracts separately. The registry variable is used to interact with the registry contract and create new ERC6551 accounts.
+In this simplified DAO, each address that holds an ERC6551 token can vote once by calling the vote function. The createAccount function is used to create a new ERC6551 account and transfer the ownership of the token to that account.
+The getVoteCount function allows querying the vote count of a specific address.
+Make sure to replace the import statements with the correct paths to the IERC6551Registry and IERC6551Account contracts in your project.
+
+Constructor:
+The constructor takes two parameters: _registryAddress and _daoTokenContract. These parameters represent the addresses of the IERC6551Registry contract and the ERC6551 token contract, respectively.
+The constructor initializes the registry variable with the IERC6551Registry contract instance and sets the daoTokenContract variable to the ERC6551 token contract address.
+Vote:
+
+
 pragma solidity ^0.8.0;
 
 import "IERC6551Registry.sol";
