@@ -1,4 +1,5 @@
 # Simplified implementation of a DAO where each ERC6551 token holder has one vote
+
 Token holders can vote on proposals to create new ERC6551 accounts, and transfer ownership. 
 
 Please note that this implementation assumes that you have already deployed the IERC6551Registry and IERC6551Account contracts separately. The registry variable is used to interact with the registry contract and create new ERC6551 accounts.
